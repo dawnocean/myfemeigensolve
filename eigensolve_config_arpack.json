@@ -1,0 +1,32 @@
+{
+    "wavelength": 1.55,
+    "domain": {
+        "width": 6.0,
+        "height": 6.0
+    },
+    "waveguide": {
+        "type": "rectangular",
+        "width": 0.5,
+        "height": 0.22,
+        "radius": 0.5
+    },
+    "materials": {
+        "core_index": 3.48,
+        "cladding_index": 1.44
+    },
+    "solver": {
+        "order": 2,
+        "num_modes": 6,
+        "target_neff": 2.5,
+        "refinements": 3,
+        "element_type": "quad",
+        "tolerance": 1e-4,
+        "max_iterations": 200,
+        "eigensolver": "arpack"
+    },
+    "output": {
+        "directory": "results_arpack",
+        "save_fields": true,
+        "save_png": true
+    }
+}
